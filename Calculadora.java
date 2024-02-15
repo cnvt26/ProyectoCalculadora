@@ -20,4 +20,12 @@ public class Calculadora {
     public int multiplicar() {
         return this.numero1 * this.numero2;
     }
+
+    public int dividir() {
+        if (numero2 != 0) {
+            return this.numero1 / this.numero2;
+        } else {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
+    }
 }
